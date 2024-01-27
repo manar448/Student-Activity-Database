@@ -1,0 +1,60 @@
+
+*************************************  Staff Table  ****************************************
+Sequence:-
+-----------------
+
+President = 1
+Track Head = 5
+Supporters = 2
+HRs = 2
+Mentors = 6
+Total = 16
+
+-------------------------------------------------------------
+President = Maikel Anjelo
+
+Track Heads = Mohammed Gehad, Malak Ismail, Mazin Mohammed, Markus Smooth, Robert Donald
+
+Supporters = Manar Mohammed, Manar Alaa
+
+HRs = Manar Ibrahim, Menna Bassam
+
+Mentors = Ryan Ronalds, Jillian Royal, John Mars, Batoul Kamal, Ziad Mahmoud, Ahmed Mohammed
+-----------------------------------------------------------------------------------------------------------------------------------------
+Filling Data:-
+-----------------------
+
+Maikel2024@mail.com - Maikel Anjelo -  Track Head  - 01123456789
+
+**************************************************************
+
+Robert2024@mail.com - Robert Donald -  Track Head  - 01112345678 
+Markus2024@mail.com - Markus Smooth -  Track Head  - 01111234567 
+Mohammed2023@mail.com - Mohammed Gehad -  Track Head  - 01122345678 
+Malak2024@mail.com - Malak Ismail -  Track Head  - 01122234567 
+Mazin2023@mail.com - Mazin Mohammed -  Track Head  - 01123345678 
+
+**********************************************************************************************
+
+ManarSP1-2024@mail.com - Manar Mohammed - Supporter - 01123334567
+ManarSP2-2024@mail.com - Manar Alaa - Supporter - 01123445678 
+
+*******************************************************************************************
+
+Menna2024@mail.com - Menna Bassam - HR - 01123444567
+Manar2024@mail.com - Manar Ibrahim - HR - 01123455678
+
+********************************************************
+
+Ryan2023@mail.com - Ryan Ronalds - Mentor - 01123455567 
+Jillian2023@mail.com - Jillian Royal - Mentor - 01123456678 
+John2023@mail.com - John Mars - Mentor - 01123456667 
+Batoul2023@mail.com - Batoul Kamal - Mentor - 01123456778 
+Ziad2023@mail.com - Ziad Mahmoud - Mentor - 01123456777 
+Ahmed2023@mail.com - Ahmed Mohammed - Mentor - 01123456788 
+
+*************************************************************************************
+
+
+
+

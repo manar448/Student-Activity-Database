@@ -1,0 +1,105 @@
+CREATE TABLE STAFF
+(
+staff_email VARCHAR2(25) NOT NULL,
+staff_name VARCHAR2(25),
+position VARCHAR2(25),
+staff_phone NUMBER(15),
+super_email VARCHAR2(25),
+CONSTRAINT stf_mail PRIMARY KEY (staff_email),
+CONSTRAINT s_mail FOREIGN KEY (super_email) REFERENCES STAFF (staff_email)
+);
+
+CREATE TABLE INTERVIEW
+(
+invitation_code NUMBER(15),
+interviewer_name VARCHAR2(25),
+date DATE,
+location VARCHAR2(25),
+CONSTRAINT invt_code PRIMARY KEY (invitation_code)
+);
+
+CREATE TABLE STUDENT
+(
+SSN NUMBER(15)NOT NULL,
+st_email VARCHAR2(25),
+st_phone NUMBER(15),
+the_level NUMBER(15),
+st_name VARCHAR2(25),
+join_on VARCHAR2(25),
+CONSTRAINT st_ssn PRIMARY KEY (SSN),
+CONSTRAINT joining FOREIGN KEY (join_on) REFERENCES CONTEST (track_id)
+);
+
+CREATE TABLE TRACK
+(
+track_id NUMBER(15) NOT NULL,
+track_description VARCHAR2(25),
+track_name VARCHAR2(25),
+trk_date DATE,
+requirements VARCHAR2(25),
+head_Email VARCHAR2(25),
+track_lecture VARCHAR2(25),
+CONSTRAINT trk_id PRIMARY KEY (track_id),
+CONSTRAINT h_mail FOREIGN KEY (head_Email) REFERENCES STAFF (staff_email),
+CONSTRAINT trk_lctr FOREIGN KEY (track_lecture) REFERENCES STAFF (staff_email)
+);
+
+CREATE TABLE CONTEST
+(
+has_track_id NUMBER(15) NOT NULL,
+c_name VARCHAR2(25),
+requirement VARCHAR2(25),
+c_level NUMBER(15),
+c_date DATE,
+CONSTRAINT c_nme PRIMARY KEY (c_name),
+CONSTRAINT has_trk_id FOREIGN KEY (has_track_id) REFERENCES TRACK (track_id)
+);
+
+CREATE TABLE STAFF_PHONES
+(
+staff_emails VARCHAR2(25),
+staff_phone NUMBER(15),
+CONSTRAINT stf_phones PRIMARY KEY (staff_phone),
+CONSTRAINT stf_mails FOREIGN KEY (staff_emails) REFERENCES STAFF (staff_email)
+);
+
+CREATE TABLE SUPPORT
+(
+support_staff_email VARCHAR2(25),
+student_SSN NUMBER(15),
+CONSTRAINT stf_sprt_mails FOREIGN KEY (support_staff_email) REFERENCES STAFF (staff_email),
+CONSTRAINT stdnt_ssn FOREIGN KEY (student_SSN) REFERENCES STUDENT (SSN)
+);
+
+CREATE TABLE JOIN
+(
+invitation_code NUMBER(15),
+student_SSN NUMBER(15),
+CONSTRAINT j_invitation_code FOREIGN KEY (invitation_code) REFERENCES INTERVIEW (invitation_code),
+CONSTRAINT j_stdnt_ssn FOREIGN KEY (student_SSN) REFERENCES STUDENT (SSN)
+);
+
+CREATE TABLE STUDENT_PHONES
+(
+std_phone NUMBER(15),
+std_SSN NUMBER(15),
+CONSTRAINT sp_std_phone PRIMARY KEY (std_phone),
+CONSTRAINT sp_stdnt_ssn FOREIGN KEY (std_SSN) REFERENCES STUDENT (SSN)
+);
+
+CREATE TABLE ACCEPT_ON
+(
+invitation_code NUMBER(15),
+track_id NUMBER(15),
+CONSTRAINT acc_invt_code FOREIGN KEY (invitation_code) REFERENCES INTERVIEW (invitation_code),
+CONSTRAINT acc_trk_id FOREIGN KEY (track_id) REFERENCES TRACK (track_id)
+);
+
+CREATE TABLE ATTEND
+(
+track_id NUMBER(15),
+student_SSN NUMBER(15),
+hours NUMBER(15),
+CONSTRAINT att_trk_id FOREIGN KEY (track_id) REFERENCES TRACK (track_id),
+CONSTRAINT att_std_ssn FOREIGN KEY (student_SSN) REFERENCES STUDENT (SSN)
+);

@@ -1,0 +1,37 @@
+
+*************************************  Track Table  ****************************************
+Sequence:-
+-----------------
+
+Tracks = 5
+Heads = 5
+Dates = 5
+Requirments = 5
+
+-------------------------------------------------------------
+Track Heads = Mohammed Gehad, Malak Ismail, Mazin Mohammed, Markus Smooth, Robert Donald
+
+Tracks = Machine_Learning, Software_Testing, Flutter, Cyber_Security, Data_Structurs
+
+Mentors = Ryan Ronalds, Jillian Royal, John Mars, Batoul Kamal, Ziad Mahmoud, Ahmed Mohammed
+-----------------------------------------------------------------------------------------------------------------------------------------
+Filling Data:-
+-----------------------
+101 | Data Structers and Elgorithms | Data_Structurs | 25-SEP-21 | OOP | Markus2024@mail.com | Ziad2023@mail.com
+
+102 | Ethical Hacking and protecting form the Malware and hackers attacks | Cyber_Security | 26-SEP-21 Web Development | Mazin2023@mail.com | John2023@mail.com
+
+103 | Android and it's Aplications | Flutter | 27-SEP-21 | Java & XML | Malak2024@mail.com | Ryan2023@mail.com
+
+104 | Testing of the performence and the quality for a specific Software | Software_Testing | 28-SEP-21 | C++ & Logic Design | Robert2024@mail.com | Jillian2023@mail.com
+
+105 | Artificial Intelligence and Machine Learning with Python & R | Machine_Learning | 29-SEP-21 | Python & R & Probability | Mohammed2023@mail.com | Batoul2023@mail.com
+
+
+
+
+
+
+
+
+

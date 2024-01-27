@@ -1,0 +1,31 @@
+Staff_phones Table
+
+
+
+Maikel2024@mail.com - 01123456789
+
+
+
+Robertc2024@mail.com - 01112345678 
+Markus2024@mail.com - 01111234567 
+Mohammed2023@mail.com - 01122345678 
+Malak2024@mail.com - 01122234567 
+Mazin2023@mail.com - 01123345678 
+
+
+ManarSP1-2024@mail.com - 01123334567
+ManarSP2-2024@mail.com - 01123445678 
+
+
+
+Menna2024@mail.com - 01123444567
+Manar2024@mail.com - 01123455678
+
+
+
+Ryan2023@mail.com - 01123455567 
+Jillian2023@mail.com - 01123456678 
+John2023@mail.com - 01123456667 
+Batoul2023@mail.com - 01123456778 
+Ziad2023@mail.com - 01123456777 
+Ahmed2023@mail.com - 01123456788 
